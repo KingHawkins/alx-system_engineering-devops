@@ -1,2 +1,2 @@
 #!/bin/bash
-TRUEKNOWLEDGE=89| export TRUEKNOWLEDGE | echo $($TRUEKNOWLEDGE + 128)
+echo $((128 + $TRUEKNOWLEDGE))
