@@ -1,1 +1,1 @@
-My readme about shell variables,init files and expansions
+My first readme about shell,variables,init files and expansions
