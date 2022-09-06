@@ -1,2 +1,2 @@
 #!/bin/bash
-new=$PATH:/action, echo `$new`
+new=$PATH:/action echo $new
