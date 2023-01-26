@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#prints the local time
 hour=1
 counter=1
 echo "Hour: 0"

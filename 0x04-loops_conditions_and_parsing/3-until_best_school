@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#using until loop to print best school string 10 times
 counter=0
 until [ $counter == 10 ]
 do
