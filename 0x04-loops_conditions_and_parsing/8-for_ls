@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+for count in {ls}
+do
+    ls | sort | sed -e 's/^[0-9]*-//g'
+done

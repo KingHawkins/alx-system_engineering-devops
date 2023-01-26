@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+hour=1
+counter=1
+echo "Hour: 0"
+while [ $counter -le 708 ]
+do
+    echo $counter
+    if [ $counter == 59 ]
+    then
+        counter=0
+        if [ $hour != 13 ]
+        then
+        echo "Hour: $hour"
+        fi
+        ((hour++))
+        if [ $hour == 14 ]
+        then
+            break
+        fi
+    fi
+    ((counter++))
+done
