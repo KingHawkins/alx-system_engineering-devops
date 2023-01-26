@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 #printing number of ip adddreess
 awk ' {print $1, $9} ' apache-access.log
+
