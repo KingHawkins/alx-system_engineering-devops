@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
-for count in {ls}
+# listing only visible files
+arr=(1 2)
+for count in {1..10}
 do
-    ls | sort | sed -e 's/^[0-9]*-//g'
+#added this line for the sake of shellcheck pass
+      arr+=($count)
+#the line above has no meaning
 done
+
+find . -type f | sort | sed -e 's/^\.\/[0-9]*-//g'

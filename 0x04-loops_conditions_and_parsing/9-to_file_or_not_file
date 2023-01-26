@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#some function
 FILE=school
 if  [[ -f $FILE ]] &&  [[ `cat $FILE | wc -l`  == 0 ]]
 then
