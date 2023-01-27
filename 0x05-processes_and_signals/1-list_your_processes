@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 #lists all users processes
-"$(ps -a)"
+ps axuf
 
