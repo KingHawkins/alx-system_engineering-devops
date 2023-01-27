@@ -5,12 +5,12 @@ if  [[ -f $FILE ]] &&  [[ `cat $FILE | wc -l`  == 0 ]]
 then
     echo "$FILE file exists"
     echo "$FILE file is empty"
-    echo "$FILE file is a regular file"
+    echo "$FILE is a regular file"
 elif [[ -f $FILE ]] &&  [[ `cat $FILE | wc -l`  != 0 ]]
 then
     echo "$FILE file exists"
     echo "$FILE file is not empty"
-    echo "$FILE file is a regular file"
+    echo "$FILE is a regular file"
 elif [[ -d $FILE ]]
 then
     echo "$FILE file exists"
