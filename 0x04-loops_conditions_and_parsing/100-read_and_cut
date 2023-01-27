@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #using awk
 counter=1
-while [ $counter -le `cat /etc/passwd | wc -l` ]
+while [ $counter -le $(cat /etc/passwd | wc -l) ]
 do
     awk ' {print $1} '
     ((counter++))
