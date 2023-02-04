@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-#shows attached IPS
-ip a | grep "scope" | grep -Po '(?<=inet )[\d.]+'
+# lists all IPv4 things 
+ifconfig | awk -F "[: ]+" '/inet addr:/{print $4}'
