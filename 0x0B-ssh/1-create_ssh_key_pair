@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# generates a private key pair with paraphrase betty
+ssh-keygen -t rsa -b 4096 -f school -N betty
