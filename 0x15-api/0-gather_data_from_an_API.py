@@ -1,6 +1,23 @@
 #!/usr/bin/python3
 """
-Python script that, uses a REST API.
+This script retrieves information from a REST API to display a report on tasks completed by an employee.
+
+Inputs:
+- employee_id: integer representing the ID of the employee to retrieve tasks for
+
+Outputs:
+- Prints a report showing the name of the employee, the number of tasks completed out of the total tasks, and a list of the completed tasks.
+
+API:
+This script uses the following REST API:
+- https://jsonplaceholder.typicode.com/users/{employee_id}: retrieves information about the employee with the given ID.
+- https://jsonplaceholder.typicode.com/todos/: retrieves a list of all tasks.
+
+Usage: 
+python3 employee_tasks.py employee_id
+
+Example:
+python3 employee_tasks.py 1
 """
 import json
 import requests
