@@ -4,9 +4,9 @@ Python script that, uses a REST API,
 for a given employee ID, returns information about his/her TODO list progress.
 prints the json format of the data
 """
+import json
 import os
 import requests
-import json
 from sys import argv
 
 
