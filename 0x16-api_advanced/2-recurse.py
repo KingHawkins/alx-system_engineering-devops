@@ -1,9 +1,12 @@
 #!/usr/bin/python3
-"""Returns all the data for a given subreddit recursively"""
+"""
+Returns all the data for a given subreddit recursively.
+"""
 import requests
 
 
 def recurse(subreddit, hot_list=[]):
+    """ Implementation. """
     headers = {'User-Agent': 'Mozilla/5.0'}
     url = f"https://www.reddit.com/r/{subreddit}/hot.json"
     response = requests.get(url, headers=headers)
