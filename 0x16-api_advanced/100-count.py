@@ -1,11 +1,15 @@
 #!/usr/bin/python3
 """
 Counts.
+
+
 """
 import requests
 
 def count_words(subreddit, word_list, count_dict=None):
-    """Implementation."""
+    """
+    Implementation.
+    """
     # Initialize the count dictionary if it hasn't been created yet
     if count_dict is None:
         count_dict = {}
